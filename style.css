@@ -7,24 +7,24 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: #FCF6F5;
-    height: 100vh;
+    height: 500vh;
     color: #000;
     display: flex;
     justify-content: center;
 }
 
-/* Genral */
+/*                   General                 */
 .container {
     padding: 0 8.4rem;
 }
 
-.img-w {
+.mainimg {
     width: 100%;
     height: auto;
 }
 
 /* Nav */
-header {
+.header1 {
     box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
     background: #FCF6F5;
     position: sticky;
@@ -142,7 +142,6 @@ li a:hover {
     text-decoration: none;
     background-color: #990011;
     color: #FCF6F5;
-    /* border: 1.6px solid var(--primary-color); */
     font-size: 1.5rem;
     border-radius: 50%;
     padding: 0.39rem;
@@ -156,8 +155,8 @@ li a:hover {
     color: #FCF6F5;
     background-color: #990011;
     box-shadow: 0 0 20px #990011;
-    transition: all .3s ease-in-out;
-    border-radius: 20%;
+    transition: .2s;
+    border-radius: 10%;
 }
 
 
@@ -171,34 +170,22 @@ li a:hover {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-/* Section 1 End */
-
-
-.dark-mode {
-    background-color: #1F252E;
-    color: #FCF6F5;
+/*  Resume  */
+.resume{
+    padding-top: 10%;
+    padding-left: 1%;
 }
 
-.mode input {
-    display: none;
+#openAndDownloadBtn{
+    border-radius: 30px;
+    height: 50px;
+    width: 200px;
+    background-color: #990011;
+    color:#FCF6F5;
+    font-size: 17px;
+    font-family: ui-sans-serif;
+    animation: leftSideAni 1s ease forwards;
 }
-
-.dark-mode .logo a, 
-.dark-mode ul li a, 
-.dark-mode .main h3, 
-.dark-mode .main h1 {
-    color: #FCF6F5;
-}
-.dark-mode ul li a.active, .dark-mode ul li a:hover {
-    color: #990011;
-}
-
-.dark-mode header {
-    box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
-    background: #1F252E;
-}
-
-
 
 /* Animation */
 @keyframes leftSideAni {
@@ -324,13 +311,6 @@ li a:hover {
         left: 0%;
         transition: all 0.3s ease;
     }
-    .dark-mode .menu {
-        color: #990011;
-    }
-
-    .dark-mode ul {
-        background: #1F252E;
-    }
 
     .mode {
         position: absolute;
@@ -347,4 +327,28 @@ li a:hover {
 }
 
 /*              Section 2               */
+
+.about-box{
+    margin-top: 10%;
+    padding: 0%;
+    box-shadow: 0px 4px 17px #990011;
+    background: #FCF6F5;
+    top: 0;
+    font-size: 20px;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.aboutheading{
+    text-align: center;
+    padding: 5%;
+    font-size: 30px;
+    color: black;
+}
+
+.containerofabout{
+    margin: auto;
+    padding-bottom: 5%;
+    margin-left: 10.3%;
+}
 
