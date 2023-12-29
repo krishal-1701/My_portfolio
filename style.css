@@ -329,7 +329,7 @@ li a:hover {
 /*              Section 2               */
 
 .about-box{
-    margin-top: 10%;
+    margin: 11% 3% 3% 3%;
     padding: 0%;
     box-shadow: 0px 4px 17px #990011;
     background: #FCF6F5;
@@ -337,6 +337,7 @@ li a:hover {
     font-size: 20px;
     z-index: 1;
     border-radius: 30px;
+    
 }
 
 .aboutheading{
@@ -346,9 +347,41 @@ li a:hover {
     color: black;
 }
 
+.box-content{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 2%;
+}
+
+.images1{
+    margin: 3%;
+    border-radius: 10%;
+}
+
+.mainimg1{
+    border-radius: 10%;
+    width: 300px;
+    height: 320px;
+    margin-bottom: 2%;
+    
+}
+
+@media (max-width: 600px)
+{
+    .box-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerofabout{
+        padding: 5%;
+    }
+
+}
+
 .containerofabout{
     margin: auto;
     padding-bottom: 5%;
-    margin-left: 10.3%;
 }
 
